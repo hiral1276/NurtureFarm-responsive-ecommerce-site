@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nurture.farm</title>
+
+    <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <style>
+    .shopping-cart.active {
+      display: block;
+    }
+    .shopping-cart .total-price {
+      text-align: center;
+      font-size: 1.9rem;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .shopping-cart .checkout-btn {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 2rem;
+      background-color: #0f8049;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .shopping-cart .checkout-btn:hover {
+      background-color: #0f8049;
+    }
+  </style>
+
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+              
+         <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>nurture.farm</a>
+
+        <nav class="navbar">
+            <a href="index copy.html">home</a>
+            <a href="features copy.html">features</a>
+            <a href="categories copy.html">Categories</a>
+            <a href="blogs copy.html">blogs</a>
+            <a href="about us copy.html">about us</a>
+            <a href="contact us copy.html">contact us</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+             <!-- Dynamic cart items will appear here -->
+        </div>
+
+        
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Fresh and <span>100% Organic</span> Products for You</h3>
+            <p>Growing fresh and sustainable produce with care and dedication. Bringing nature's best from our farm to your home</p>
+            <a href="categories copy.html" class="btn">Shop now</a>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- catagories section starts -->
+    <section class="categories" id="categories">
+        <h1 class="heading">Product Categories</h1>
+        <div class="box-container">
+             <div class="box">
+                <img src="image/cat-1.jpg" alt="">
+                <h3>Dairy Products</h3>
+                <p>Upto 30% off</p> 
+            </div>
+
+            <div class="box">
+                <img src="image/cat-2.jpg" alt="">
+                <h3>Fresh Fruits</h3>
+                <p>Upto 40% off</p>  
+            </div>
+
+            <div class="box">
+                <img src="image/cat-3.jpg" alt="">
+                <h3>Vegetables</h3>
+                <p>Upto 45% off</p>
+            </div>
+
+            <div class="box">
+                <img src="image/cat-4.jpg" alt="">
+                <h3>Spices & Herbs</h3>
+                <p>Upto 27% off</p>
+            </div>
+
+            <div class="box">
+                <img src="image/cat-5.jpg" alt="">
+                <h3>Grains</h3>
+                <p>Upto 30% off</p>
+            </div>
+
+            <div class="box">
+                <img src="image/cat-6.jpg" alt="">
+                <h3>Cash Crops</h3>
+                <p>Upto 15% off</p>  
+            </div>
+
+            <div class="box">
+                <img src="image/cat-7.jpg" alt="">
+                <h3>Other Products</h3>
+                <p>Upto 25% off</p>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- dairy product section starts -->
+
+    <section class="categories" id="categories">
+    <h1 class="heading">Dairy Products</h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="image/dairy-milk1.jpg" alt="">
+            <h3>Cow milk</h3>
+            <p>Rs.30/- - 500ml</p>
+            <a href="#" class="btn" data-unit="500ml">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="image/dairy-milk2.jpg" alt="">
+            <h3>Buffalo milk</h3>
+            <p>Rs.35/- - 500ml</p>
+            <a href="#" class="btn" data-unit="500ml">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="image/dairy-paneer.jpg" alt="">
+            <h3>Malai Paneer</h3>
+            <p>Rs.90/- - 200gm</p>
+            <a href="#" class="btn" data-unit="200gm">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="image/dairy-ghee.jpg" alt="">
+            <h3>Ghee</h3>
+            <p>Rs.258/- - 500gm</p>
+            <a href="#" class="btn" data-unit="500gm">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="image/dairy-dahi.jpg" alt="">
+            <h3>Dahi Pouch</h3>
+            <p>Rs.35/- - 400gm</p>
+            <a href="#" class="btn" data-unit="400gm">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="image/dairy-pchaas.jpg" alt="">
+            <h3>Plain Chaas Bottle</h3>
+            <p>Rs.40/- - 500ml</p>
+            <a href="#" class="btn" data-unit="500ml">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="image/dairy-mchaas.jpg" alt="">
+            <h3>Masala Chaas Cup</h3>
+            <p>Rs.25/- - 200ml</p>
+            <a href="#" class="btn" data-unit="200ml">Add to Cart</a>
+        </div>
+        <div class="box">
+            <img src="image/dairy-lassi.jpg" alt="">
+            <h3>Malai Lassi</h3>
+            <p>Rs.35/- - 200ml</p>
+            <a href="#" class="btn" data-unit="200ml">Add to Cart</a>
+        </div>
+    </div>
+    </section>
+    <!-- dairy product section ends -->
+
+    <!-- fruit section starts -->
+    <section class="categories" id="categories">
+        <h1 class="heading">Fresh Fruits</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/fruit-chiku.jpg" alt="">
+                <h3>Chiku</h3>
+                <p>Rs.80/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-orange.jpg" alt="">
+                <h3>Fresh Orange</h3>
+                <p>Rs.70/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-wm.jpg" alt="">
+                <h3>Watermelon</h3>
+                <p>Rs.95/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-banana.jpg" alt="">
+                <h3>Banana</h3>
+                <p>Rs.50/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-ggrape.jpg" alt="">
+                <h3>Grapes Green</h3>
+                <p>Rs.77/- - 500g</p> 
+                <a href="#" class="btn" data-unit="500g">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-bgrape.jpg" alt="">
+                <h3>Grapes Black</h3>
+                <p>Rs.92/- - 500g</p> 
+                <a href="#" class="btn" data-unit="500g">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-apple.jpg" alt="">
+                <h3>Fresh Apple</h3>
+                <p>Rs.210/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-kiwi.jpg" alt="">
+                <h3>Kiwi</h3>
+                <p>Rs.85/- - 500g</p> 
+                <a href="#" class="btn" data-unit="500g">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-papaya.jpg" alt="">
+                <h3>Papaya</h3>
+                <p>Rs.71/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-pome.jpg" alt="">
+                <h3>Pomegranate</h3>
+                <p>Rs.152/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-pa.jpg" alt="">
+                <h3>Pineapple</h3>
+                <p>Rs.45/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fruit-guava.jpg" alt="">
+                <h3>Guava</h3>
+                <p>Rs.98/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+            
+        </div>
+    </section>
+    <!-- fruit section ends -->
+
+    <!-- vegetables section starts -->
+    <section class="categories" id="categories">
+        <h1 class="heading">Fresh vegetables</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/veg-flower.jpg" alt="">
+                <h3>Cauliflower</h3>
+                <p>Rs.34/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-bb.jpg" alt="">
+                <h3>Bringjal Bharta</h3>
+                <p>Rs.40/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-cap.jpg" alt="">
+                <h3>Capsicum Green</h3>
+                <p>Rs.30/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-lemon.jpg" alt="">
+                <h3>Lemon</h3>
+                <p>Rs.60/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-potato.jpg" alt="">
+                <h3>Potato</h3>
+                <p>Rs.30/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-tomato.jpg" alt="">
+                <h3>Tomato</h3>
+                <p>Rs.40/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-peas.jpg" alt="">
+                <h3>Grean Peas Unpeeled</h3>
+                <p>Rs.35/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-sp.jpg" alt="">
+                <h3>Sweet Potato</h3>
+                <p>Rs.45/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-onion.jpg" alt="">
+                <h3>Onion</h3>
+                <p>Rs.25/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-cucum.jpg" alt="">
+                <h3>Cucumber Local</h3>
+                <p>Rs.30/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-rad.jpg" alt="">
+                <h3>Radish White</h3>
+                <p>Rs.35/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-chilli.jpg" alt="">
+                <h3>Chilli Green</h3>
+                <p>Rs.20/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-lauki.jpg" alt="">
+                <h3>Bottle Gourd (Louki)</h3>
+                <p>Rs.40/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-beet.jpg" alt="">
+                <h3>Beetroot</h3>
+                <p>Rs.20/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-cabbage.jpg" alt="">
+                <h3>Cabbage</h3>
+                <p>Rs.15/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/veg-bhindi.jpg" alt="">
+                <h3>Okra (Bhindi)</h3>
+                <p>Rs.30/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+            
+        </div>
+    </section>
+    <!-- vegetable section ends -->
+
+    <!-- spices & herbs section startss -->
+     <section class="categories" id="categories">
+        <h1 class="heading">Spices & Herbs</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/hs-rawt.jpg" alt="">
+                <h3>Raw Turmeric</h3>
+                <p>Rs.45/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-garlic.jpg" alt="">
+                <h3>Garlic</h3>
+                <p>Rs.135/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-ginger.jpg" alt="">
+                <h3>Ginger</h3>
+                <p>Rs.45/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-rai.jpg" alt="">
+                <h3>Musturd Small(Rai)</h3>
+                <p>Rs.98/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-stara.jpg" alt="">
+                <h3>Star Anise(Badiyan)</h3>
+                <p>Rs.98/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-cinna.jpg" alt="">
+                <h3>Cinnamon Rolls(Dalchini)</h3>
+                <p>Rs.235/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-bayl.jpg" alt="">
+                <h3>Bay Leaf(Tejpatta)</h3>
+                <p>Rs.80/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-clove.jpg" alt="">
+                <h3>Clove(Loung)</h3>
+                <p>Rs.50/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-fennel.jpg" alt="">
+                <h3>Fennel Seeds(souf)</h3>
+                <p>Rs.120/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-cumin.jpg" alt="">
+                <h3>Cumin Seeds(Jeera)</h3>
+                <p>Rs.150/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-bpaper.jpg" alt="">
+                <h3>Black Papper(Kali Mirch)</h3>
+                <p>Rs.142/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/hs-card.jpg" alt="">
+                <h3>Cardamom(elaechi)</h3>
+                <p>Rs.99/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- spices & herbs section ends -->
+
+    <!-- Grains section starts-->
+    <section class="categories" id="categories">
+        <h1 class="heading">Grains & Crops</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/gc-pop.jpg" alt="">
+                <h3>Popcorn Kernels</h3>
+                <p>Rs.119/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/gc-bajra.jpg" alt="">
+                <h3>Pearl Millets(Bajra)</h3>
+                <p>Rs.38/- - 1kg</p> 
+                <a href="#" class="btn"  data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/gc-wheat.jpg" alt="">
+                <h3>Whole Wheat</h3>
+                <p>Rs.71/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/gc-basrice.jpg" alt="">
+                <h3>Basmati Rice</h3>
+                <p>Rs.38/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/gc-srice.jpg" alt="">
+                <h3>Sonamasuri Rice</h3>
+                <p>Rs.45/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/gc-fox.jpg" alt="">
+                <h3>Foxtail Millet</h3>
+                <p>Rs.38/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/gc-sugarc.jpg" alt="">
+                <h3>Fresh Sugercane</h3>
+                <p>Rs.20/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/gc-cotton.jpg" alt="">
+                <h3>Raw Cotton</h3>
+                <p>Rs.70/- - 1kg</p> 
+                <a href="#" class="btn" data-unit="1kg">Add to Cart</a>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Grains section ends -->
+
+    <!-- Other products section starts -->
+    <section class="categories" id="categories">
+        <h1 class="heading">Other Products</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/op-soyabean.jpg" alt="">
+                <h3>Soyabean</h3>
+                <p>Rs.142/- - 1kg</p> 
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="image/op-peanut.jpg" alt="">
+                <h3>Raw Peanut</h3>
+                <p>Rs.213/- - 1kg</p> 
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Other products section ends -->
+    <!-- catagories section ends --> 
+
+  <script>
+  let cartItems = [];
+
+  document.getElementById('cart-btn').addEventListener('click', function () {
+    document.querySelector('.shopping-cart').classList.toggle('active');
+    displayCart();
+  });
+
+  document.querySelectorAll('.categories .box .btn').forEach(button => {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      const box = this.closest('.box');
+      const title = box.querySelector('h3').innerText;
+      const priceText = box.querySelector('p').innerText;
+      const price = parseFloat(priceText.match(/\d+/)[0]);
+      const unit = this.getAttribute('data-unit');
+      const img = box.querySelector('img').src;
+
+      const existingItem = cartItems.find(item => item.title === title);
+      if (existingItem) {
+        existingItem.qty += 1;
+      } else {
+        cartItems.push({ title, price, img, unit, qty: 1 });
+      }
+
+      displayCart();
+    });
+  });
+
+  function displayCart() {
+    const cartBox = document.querySelector('.shopping-cart');
+    cartBox.innerHTML = '';
+
+    if (cartItems.length === 0) {
+      cartBox.innerHTML = '<p style="padding:1rem;">Your cart is empty.</p>';
+      return;
+    }
+
+    let total = 0;
+
+    cartItems.forEach((item, index) => {
+      total += item.price * item.qty;
+
+      const box = document.createElement('div');
+      box.classList.add('box');
+      box.innerHTML = `
+        <i class="fas fa-trash" data-index="${index}"></i>
+        <img src="${item.img}" alt="">
+        <div class="content">
+          <h3>${item.title}</h3>
+          <span class="price">Rs.${item.price}/- (${item.unit})</span><br>
+          <div>
+            <button onclick="changeQty(${index}, -1)">-</button>
+            <span style="margin: 0 10px;">Qty: ${item.qty}</span>
+            <button onclick="changeQty(${index}, 1)">+</button>
+          </div>
+        </div>
+      `;
+      cartBox.appendChild(box);
+    });
+
+    const totalEl = document.createElement('div');
+    totalEl.classList.add('total-price');
+    totalEl.innerText = `Total Price: Rs.${total}/-`;
+    cartBox.appendChild(totalEl);
+
+    const checkoutBtn = document.createElement('button');
+    checkoutBtn.classList.add('checkout-btn');
+    checkoutBtn.innerText = 'Checkout';
+    checkoutBtn.onclick = function() {
+     window.location.href = 'checkout.html';
+    };
+    cartBox.appendChild(checkoutBtn);
+
+    document.querySelectorAll('.shopping-cart .fa-trash').forEach(icon => {
+      icon.addEventListener('click', function () {
+        const index = this.getAttribute('data-index');
+        cartItems.splice(index, 1);
+        displayCart();
+      });
+    });
+  }
+
+  function changeQty(index, change) {
+    cartItems[index].qty += change;
+    if (cartItems[index].qty <= 0) {
+      cartItems.splice(index, 1);
+    }
+    displayCart();
+  }
+</script>
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>nurture.farm <i class="fas fa-shopping-basket"></i> </h3>
+                <p>A Farm-To-Home Platform Making <br>Safe Food Possible For All & Improving Farmer Livelihoods. 
+                    We Are Trans-<br>forming The Way Food Reaches Your Plate Through Community Farming.
+                </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Cantact info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+91 9191870119</a>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+91 8446070119</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> hiralmokariya@gmail.com </a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> pune, india - 411046 </a>
+            </div>
+
+            <div class="box">
+                <h3> quick links </h3>
+                <a href="index copy.html" class="links">      <i class="fas fa-arrow-right"></i> home </a>
+                <a href="features copy.html" class="links">  <i class="fas fa-arrow-right"></i> features </a>
+                <a href="categories copy.html" class="links"><i class="fas fa-arrow-right"></i> categories </a>
+                <a href="blogs copy.html" class="links">      <i class="fas fa-arrow-right"></i> blogs </a>
+                <a href="about us copy.html" class="links">  <i class="fas fa-arrow-right"></i> about us </a>
+                <a href="contact us copy.html" class="links"><i class="fas fa-arrow-right"></i> contact us </a>
+            </div>
+
+            <div class="box">
+                <h3>newletter</h3>
+                <p>inform us for latest updates</p>
+                <form action="php/subscribe.php" method="POST">
+                   <input type="email" name="email" placeholder="your email" class="email" required>
+                   <input type="submit" value="submit" class="btn"><br>
+                </form> 
+            </div>
+  
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+</body>
+</html>

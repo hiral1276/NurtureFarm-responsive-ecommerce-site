@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - Nurture Farm Market</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f6fff5;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .faq-title {
+      text-align: center;
+      font-size: 32px;
+      color: #2c5f2d;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .faq {
+      background-color: #ffffff;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      padding: 20px 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .faq:hover {
+      transform: scale(1.01);
+    }
+
+    .faq-question {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .faq-question i {
+      margin-left: 10px;
+      color: #2c5f2d;
+    }
+
+    .faq-answer {
+      font-size: 16px;
+      color: #555;
+      margin-top: 10px;
+      display: none;
+      line-height: 1.6;
+    }
+
+    .faq.open .faq-answer {
+      display: block;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const faqs = document.querySelectorAll(".faq-question");
+      faqs.forEach(faq => {
+        faq.addEventListener("click", () => {
+          const parent = faq.parentElement;
+          parent.classList.toggle("open");
+        });
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="faq-container">
+    <div class="faq-title">Frequently Asked Questions</div>
+
+    <div class="faq">
+      <div class="faq-question">What is Nurture Farm Market? <i class="fas fa-leaf"></i></div>
+      <div class="faq-answer">Nurture Farm Market is an online platform that connects farmers and customers directly, allowing the purchase and sale of fresh agricultural products.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">How do I register as a customer or farmer? <i class="fas fa-user-plus"></i></div>
+      <div class="faq-answer">You can register through our website by clicking on the Register button and filling out the form with the required details.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">How can I track my order? <i class="fas fa-map-marker-alt"></i></div>
+      <div class="faq-answer">Go to the 'My Orders' section from your profile dropdown to view current and past orders, along with tracking details.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">Is product quality guaranteed? <i class="fas fa-check-circle"></i></div>
+      <div class="faq-answer">Absolutely! We ensure that all listed products are fresh and of high quality. Our team and farmers follow strict standards to maintain quality from farm to doorstep.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">What if I receive a damaged or spoiled product? <i class="fas fa-exclamation-triangle"></i></div>
+      <div class="faq-answer">If you receive a damaged product, you can request a replacement or refund by contacting support within 24 hours of delivery. We prioritize customer satisfaction.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">What features does the website offer for users? <i class="fas fa-star"></i></div>
+      <div class="faq-answer">Our platform offers an easy registration process, personalized user panel, order tracking, secure checkout, and the ability to connect directly with farmers.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">How do farmers benefit from this platform? <i class="fas fa-tractor"></i></div>
+      <div class="faq-answer">Farmers can sell directly to customers without middlemen, ensuring better profit margins and exposure to a wider market.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">How do I contact support? <i class="fas fa-headset"></i></div>
+      <div class="faq-answer">Visit our Help section or use the Contact form at the bottom of our homepage to reach out to our support team.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">Can I cancel or modify my order? <i class="fas fa-ban"></i></div>
+      <div class="faq-answer">Yes, orders can be canceled or modified from the 'My Orders' section if they haven’t been delivered yet.</div>
+    </div>
+  </div>
+</body>
+</html>

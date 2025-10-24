@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Placed Successfully | nurture.farm</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .order-success {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+    h1 {
+      color: #0f8049;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    .checkmark {
+      font-size: 80px;
+      color: #0f8049;
+      animation: checkmarkAnimation 1s ease-in-out;
+    }
+    @keyframes checkmarkAnimation {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.6;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    .btn {
+      background-color: #0f8049;
+      color: white;
+      border: none;
+      padding: 15px;
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="order-success">
+    <!-- Animated Checkmark Icon -->
+    <div class="checkmark">&#10004;</div> <!-- This is the checkmark icon -->
+
+    <!-- Success Message -->
+    <h1>Your order has been placed successfully!</h1>
+
+    <!-- Back to Home Button -->
+    <button class="btn" onclick="window.location.href = 'index.html';">Back to Home</button>
+  </div>
+
+</body>
+</html>

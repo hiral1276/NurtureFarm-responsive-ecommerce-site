@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Checkout | nurture.farm</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic styles remain the same */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f3fef4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+    .checkout-container {
+      width: 100%;
+      max-width: 700px;
+      padding: 40px 20px;
+    }
+    .checkout-form {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #0f8049;
+    }
+    label {
+      font-weight: 500;
+      margin-top: 13px;
+      display: block;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 8px;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    input:invalid {
+      border-color: red;
+    }
+    .btn {
+      background-color: #128f53;
+      color: white;
+      border: none;
+      padding: 15px;
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #21ad5b;
+    }
+    .payment-detail {
+      display: none;
+    }
+    .hidden {
+      display: none;
+    }
+    .checkout-form { width: 100%; }
+    /* Other styles remain the same */
+  </style>
+</head>
+<body>
+  <div class="checkout-container">
+    <form class="checkout-form" id="checkoutForm">
+      <h2>Checkout</h2>
+
+      <!-- Your form fields like deliveryType, name, address, etc. remain the same -->
+
+    <label for="deliveryType">Delivery Type</label>
+    <select id="deliveryType" required onchange="toggleAddressField()">
+        <option value="">--Select--</option>
+        <option value="home">Home Delivery</option>
+        <option value="pickup">Pickup from Store</option>
+    </select>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="e.g. Hiral Mehta" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="e.g. 9876543210" pattern="[0-9]{10}" required>
+
+    <div id="address-group">
+      <label for="address">Delivery Address</label>
+      <textarea id="address" rows="4" placeholder="Flat No, Street, Area, City, Pincode" required></textarea>
+    </div>
+
+    <label for="schedule">Select Delivery Day</label>
+    <select id="schedule" required onchange="autoSetDate()">
+      <option value="">--Select--</option>
+      <option value="Today">Today</option>
+      <option value="Tomorrow">Tomorrow</option>
+      <option value="Weekend">Weekend (Sat/Sun)</option>
+    </select>
+
+    <label for="autoDate">Auto Delivery Date</label>
+    <input type="text" id="autoDate" disabled style="background:#f2f2f2;">
+
+    <label for="time">Preferred Delivery Time</label>
+    <select id="time" required>
+      <option value="">--Select--</option>
+      <option value="Morning">Morning (8am - 11am)</option>
+      <option value="Afternoon">Afternoon (12pm - 3pm)</option>
+      <option value="Evening">Evening (5pm - 8pm)</option>
+    </select>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment" onchange="showPaymentFields()" required>
+      <option value="">--Select--</option>
+      <option value="cod">Cash on Delivery</option>
+      <option value="upi">UPI</option>
+      <option value="card">Debit/Credit Card</option>
+    </select>
+
+    <!-- UPI Input -->
+    <div id="upi-field" class="payment-detail">
+      <label for="upiId">Enter UPI ID</label>
+      <input type="text" id="upiId" placeholder="e.g. yourname@upi">
+    </div>
+
+    <!-- Card Input -->
+    <div id="card-field" class="payment-detail">
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" placeholder="xxxx-xxxx-xxxx-1234">
+
+      <label for="cardExpiry">Expiry Date</label>
+      <input type="month" id="cardExpiry">
+
+      <label for="cardCVV">CVV</label>
+      <input type="password" id="cardCVV" maxlength="3">
+      
+    </div>
+
+
+    <label for="notes">Additional Notes</label>
+    <textarea id="notes" rows="3" placeholder="e.g. Call before arriving."></textarea>
+
+    <label>
+        <input type="checkbox" id="saveInfo"> Save delivery details for next time
+    </label>
+
+    <button type="submit" class="btn">Place Order</button>
+    </form>
+  </div>
+
+  <script>
+    function showPaymentFields() {
+      const method = document.getElementById('payment').value;
+      document.getElementById('upi-field').style.display = method === 'upi' ? 'block' : 'none';
+      document.getElementById('card-field').style.display = method === 'card' ? 'block' : 'none';
+    }
+  </script>
+
+  <script>
+
+    function showPaymentFields() {
+    const method = document.getElementById('payment').value;
+    document.getElementById('upi-field').style.display = method === 'upi' ? 'block' : 'none';
+    document.getElementById('card-field').style.display = method === 'card' ? 'block' : 'none';
+  }
+
+  function toggleAddressField() {
+    const type = document.getElementById('deliveryType').value;
+    const addressGroup = document.getElementById('address-group');
+    addressGroup.style.display = type === 'home' ? 'block' : 'none';
+  }
+
+  function autoSetDate() {
+    const schedule = document.getElementById('schedule').value;
+    const dateField = document.getElementById('autoDate');
+    const today = new Date();
+    if (schedule === 'Today') {
+      dateField.value = today.toDateString();
+    } else if (schedule === 'Tomorrow') {
+      today.setDate(today.getDate() + 1);
+      dateField.value = today.toDateString();
+    } else if (schedule === 'Weekend') {
+      let day = today.getDay();
+      let diff = (6 - day + 7) % 7;
+      today.setDate(today.getDate() + diff);
+      dateField.value = "Saturday or Sunday";
+    } else {
+      dateField.value = '';
+    }
+  }
+
+  // Save details for next time
+  document.getElementById('saveInfo').addEventListener('change', function () {
+    if (this.checked) {
+      localStorage.setItem("userInfo", JSON.stringify({
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
+        address: document.getElementById("address").value
+      }));
+    }
+  });
+
+  // Auto fill if available
+  window.onload = () => {
+    const saved = JSON.parse(localStorage.getItem("userInfo"));
+    if (saved) {
+      document.getElementById("name").value = saved.name;
+      document.getElementById("phone").value = saved.phone;
+      document.getElementById("address").value = saved.address;
+    }
+    }
+
+    document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const orderDetails = {
+        name: formData.get('name'),
+        phone: formData.get('phone'),
+        address: formData.get('address'),
+        deliveryType: formData.get('deliveryType'),
+        schedule: formData.get('schedule'),
+        time: formData.get('time'),
+        paymentMethod: formData.get('payment'),
+        notes: formData.get('notes')
+      };
+
+      // Save the order data (simulating a real backend call)
+      localStorage.setItem('orderDetails', JSON.stringify(orderDetails));
+
+      // Redirect to order success page
+      window.open('order-success.html', '_blank');
+    });
+  </script>
+</body>
+</html>
+
