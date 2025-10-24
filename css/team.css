@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+  flex-wrap: wrap;
+  padding: 60px 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 9px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+
+.team-member h3 {
+  font-size: 22px;
+  color: #2c5f2d;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #2c5f2d;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #84c318;
+}
