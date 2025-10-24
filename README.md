@@ -31,7 +31,7 @@ Clone the Repository:
 
 Bash
 
-git clone [Paste the GitHub URL of this repository here]
+git clone [https://github.com/hiral1276/NurtureFarm-responsive-ecommerce-site.git]
 Open in Browser: Navigate to the project folder, locate the main index.html file, and simply double-click it. It will open instantly in your default web browser.
 
 Development Environment (VS Code)
@@ -53,8 +53,8 @@ Advanced Features: Mobile app development, AI-powered crop suggestions, and a fa
 👩‍💻 Contact
 This project was developed by:
 
-Hiralben Mokariya (Web Developer, TY BBA(CA) Student)
+Hiralben Mokariya (fresher, TY BBA(CA) Student)
 
-GitHub: [Your GitHub Profile Link] (You can update this after you submit the profile form)
+GitHub: https://github.com/hiral1276
 
-Email: [Your Professional Email]
+Email:  hiralmokariya1276@gmail.com 
