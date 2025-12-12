@@ -53,8 +53,8 @@ Advanced Features: Mobile app development, AI-powered crop suggestions, and a fa
 👩‍💻 Contact
 This project was developed by:
 
-Hiralben Mokariya (fresher, TY BBA(CA) Student)
+Hiralben Mokariya (Final year BBA(CA) Student)
 
 GitHub: https://github.com/hiral1276
 
-Email:  hiralmokariya1276@gmail.com 
+Email:  hiralmokariya12@gmail.com 
