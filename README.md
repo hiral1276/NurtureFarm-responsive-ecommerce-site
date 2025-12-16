@@ -21,6 +21,34 @@ This project showcases a complete, clean, and user-friendly online marketplace f
 - **Responsive Design**: Fully optimized for mobile, tablet, and desktop with clean layouts and intuitive navigation
 - **Static & Lightweight**: Pure HTML/CSS/JS — no backend required for demo
 
+  ## Screenshots
+
+### Desktop View
+![Hero/Landing](screenshots/hero-desktop.png)  
+
+![Product Categories](screenshots/categories-desktop.png)  
+
+![Features](screenshots/features-desktop.png)  
+
+![Cart Sidebar](screenshots/cart-desktop.png)  
+
+![Checkout](screenshots/checkout-desktop.png)  
+
+![About Us](screenshots/about-desktop.png)  
+
+![Blogs](screenshots/blogs-desktop.png)  
+
+![Contact Us](screenshots/contact-desktop.png)  
+
+### Mobile View
+![Mobile Hero](screenshots/hero-mobile.png) 
+.
+![Mobile Categories](screenshots/categories-mobile.png) 
+.
+![Mobile Cart](screenshots/cart-mobile.png)  
+
+*Clean, responsive design optimized for all devices*
+
 ## 🛠️ Tech Stack
 
 **Frontend**
