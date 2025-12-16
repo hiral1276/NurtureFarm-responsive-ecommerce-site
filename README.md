@@ -41,8 +41,7 @@ This project showcases a complete, clean, and user-friendly online marketplace f
 ![Contact Us](screenshots/contact-desktop.png)  
 
 ### Mobile View
-![Mobile Hero](screenshots/hero-mobile.png) 
-![Mobile Categories](screenshots/categories-mobile.png) 
+![Mobile Hero](screenshots/hero-mobile.png) ![Mobile Categories](screenshots/categories-mobile.png) 
 ![Mobile Cart](screenshots/cart-mobile.png)  
 
 *Clean, responsive design optimized for all devices*
