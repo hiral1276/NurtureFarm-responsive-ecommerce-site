@@ -122,10 +122,15 @@ FARM PROJECT/
 ## 📊 Measurable Outcomes
 
 ✅ Created a complete responsive e-commerce frontend for farm-fresh products
+
 ✅ Implemented intuitive shopping flow with cart and UPI checkout
+
 ✅ Emphasized sustainability and direct farmer support through design
+
 ✅ Designed content-rich sections (blogs, about, contact) for better engagement
+
 ✅ Achieved full mobile responsiveness with clean, semantic code
+
 ✅ Created a visually appealing, theme-consistent UI focused on sustainability
 
 ## 🎯 Use Cases
