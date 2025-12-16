@@ -41,7 +41,10 @@ This project showcases a complete, clean, and user-friendly online marketplace f
 ![Contact Us](screenshots/contact-desktop.png)  
 
 ### Mobile View
-![Mobile Hero](screenshots/hero-mobile.png) ![Mobile Categories](screenshots/categories-mobile.png) 
+![Mobile Hero](screenshots/hero-mobile.png)
+
+![Mobile Categories](screenshots/categories-mobile.png) 
+
 ![Mobile Cart](screenshots/cart-mobile.png)  
 
 *Clean, responsive design optimized for all devices*
@@ -181,5 +184,5 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Built with ❤️ for sustainable farming and fresh food delivery 🌱🚀**
 
- 
+# N u r t u r e . F a r m  🌿 - F a r m - t o - H o m e  O r g a n i c  E - C o m m e r c e  W e b s i t e
 
