@@ -182,7 +182,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - LinkedIn: Hiralben Mokariya (www.linkedin.com/in/hiralben-mokariya)
 - Email: hiralmokariya12@gmail.com
 
+
 **Built with ❤️ for sustainable farming and fresh food delivery 🌱🚀**
 
-# N u r t u r e . F a r m  🌿 - F a r m - t o - H o m e  O r g a n i c  E - C o m m e r c e  W e b s i t e
+
 
