@@ -88,7 +88,6 @@ Alternatively, use VS Code with the Live Server extension for real-time preview.
 
 ```
 FARM PROJECT/
-├── Secrets of Project/          ← Folder (private/backup folder)
 ├── about us copy.html
 ├── about us.html
 ├── astyle.css
@@ -107,19 +106,26 @@ FARM PROJECT/
 ├── index.html
 ├── log_reg.html
 └── order-success.html
-
+|
 ├── css/
 │   ├── style copy.css
 │   ├── style.css
 │   └── team.css
-
+|
 ├── js/
 │   ├── ascript.js
 │   ├── profile-dropdown.js
 │   └── script.js
-
+|
 ├── image/
 │   └── (all images: product photos, banners, icons, etc.)
+|
+├── screenshots/
+|   └── (Project Screenshots )
+|
+├── .gitignore             
+├── LICENCE
+└── README.md
 ```
 
 ## 🎨 Design Highlights
