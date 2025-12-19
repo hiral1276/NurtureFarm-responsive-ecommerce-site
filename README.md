@@ -88,24 +88,25 @@ Alternatively, use VS Code with the Live Server extension for real-time preview.
 
 ```
 FARM PROJECT/
-├── about us copy.html
-├── about us.html
-├── astyle.css
-├── blogs copy.html
-├── blogs.html
-├── categories copy.html
-├── categories.html
-├── checkout.html
-├── contact us copy.html
-├── contact us.html
-├── faq.html
-├── features copy.html
-├── features.html
-├── help.html
-├── index copy.html
-├── index.html
-├── log_reg.html
-└── order-success.html
+├── html/
+|   ├── about us copy.html
+|   ├── about us.html
+|   ├── astyle.css
+|   ├── blogs copy.html
+|   ├── blogs.html
+|   ├── categories copy.html
+|   ├── categories.html
+|   ├── checkout.html
+|   ├── contact us copy.html
+|   ├── contact us.html
+|   ├── faq.html
+|   ├── features copy.html
+|   ├── features.html
+|   ├── help.html
+|   ├── index copy.html
+|   ├── index.html
+|   ├── log_reg.html
+|   └── order-success.html
 |
 ├── css/
 │   ├── style copy.css
